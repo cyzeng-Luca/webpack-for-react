@@ -1,0 +1,48 @@
+.tw-popup-container {
+  position: relative;
+  .tw-popover-arrow {
+    position: absolute;
+    top: -8px;
+    left: 30px;
+    width: 14px;
+    height: 14px;
+    box-sizing: border-box;
+    z-index: 1;
+    background: #fff;
+    border-left: 1px solid #00b4cf;
+    border-top: 1px solid #00b4cf;
+    transform: translateX(-50%) rotate(45deg);
+  }
+  .icon-close {
+    cursor: pointer;
+    position: absolute;
+    right: 26px;
+    color: #00b4cf;
+    &:active {
+      color: #01869a;
+    }
+  }
+  .tw-popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 40px;
+    left: -20px;
+    // bottom: 0px;
+    z-index: 1;
+    width: 570px;
+    height:120px;
+    border: 1px solid #00b4cf;
+    box-shadow: 0 3px 5px rgba(#000, .3);
+    background-color: #fff;
+    padding: 20px;
+    .btn-group {
+      margin-top: 10px;
+      button {
+        margin-right: 14px;
+      }
+    }
+  }
+
+}

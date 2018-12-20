@@ -1,0 +1,23 @@
+.tw-tab {
+  display: inline-block;
+  .tab-container {
+    display: flex;
+    .tab-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 100px;
+      height: 50px;
+      box-sizing: border-box;
+      border-bottom: 4px solid transparent;
+      &.active {
+        color: #00b4cf;
+        border-bottom: 4px solid #00b4cf;
+      }
+      &:hover {
+        cursor: pointer;
+        color: #00b4cf;
+      }
+    }
+  }
+}

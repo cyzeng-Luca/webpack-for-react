@@ -1,0 +1,81 @@
+.agent {
+  .board {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .card {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 30%;
+      height: 144px;
+      padding: 0 16px;
+      box-sizing: border-box;
+      &.statistics {
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #fff;
+        padding: 0;
+        .statistics-content {
+          display: flex;
+          flex-direction: column;
+          width: 90px;
+          > span {
+            line-height: 72px;
+            flex-grow: 1;
+            &.title {
+              color: rgb(107, 118, 132);
+              font-size: 12px;
+              text-align: center;
+            }
+            &.count {
+              font-size: 20px;
+              font-weight: bold;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  .search-bar {
+    position: relative;
+    height: 50px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    .search {
+      display: inline-block;
+      .icon-search {
+        position: relative;
+        left: 26px;
+        top: 2px;
+        cursor: pointer;
+      }
+      > input {
+        padding-left: 30px;
+      }
+    }
+    .icon-more {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      height: 50px;
+      right: 10px;
+      vertical-align: middle;
+      .icon-th-card {
+        cursor: pointer;
+        margin-right: 10px;
+        &.active {
+          color: #00b4cf;
+        }
+      }
+      .icon-th-list {
+        cursor: pointer;
+        &.active {
+          color: #00b4cf;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,48 @@
+.tw-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 30%;
+  height: 144px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  .title {
+    flex-grow: 1;
+    z-index: 2;
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 72px;
+  }
+  .count {
+    flex-grow: 1;
+    z-index: 2;
+    text-align: right;
+    font-size: 48px;
+    line-height: 72px;
+  }
+  > .icon {
+    z-index: 1;
+    position: absolute;
+    font-size: 144px;
+    left: 50%;
+    top: 50%;
+    margin-top: -72px;
+  }
+  &.building {
+    color: #fff;
+    background-color: rgb(246, 186, 65);
+    > .icon {
+      margin-left: -62px;
+      color: rgb(247, 196, 78);
+    }
+  }
+  &.idle {
+    color: #fff;
+    background-color: rgba(141, 185, 79);
+    > .icon {
+      margin-left: -75px;
+      color: rgb(159, 196, 104);
+    }
+  }
+}
